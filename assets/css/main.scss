@@ -1,6 +1,8 @@
 ---
 ---
 
+@import 'bootstrap/bootstrap';
+
 blockquote {
   display:block;
   width:80%;
@@ -8,7 +10,3 @@ blockquote {
   padding-left:5em;
   font-weight:bold;
 }
-
-@import 'bootstrap/bootstrap';
-
-
