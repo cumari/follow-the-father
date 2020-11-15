@@ -1,0 +1,36 @@
+---
+layout: default
+title: Support
+---
+<h2>
+	Free is Fine
+</h2>
+<p>
+	The words and thoughts shared on this site are meant to guide fathers and families to walk closer with God. In order to reach as many people as possible, you will find that all content is free to anyone that wants to read it.
+</p>
+<p>
+	If you wish to help with the cost of building and maintaining this site, you can donate using the links below, but don't feel like it is required. Please remember, your tithe is for your church any gift you feel lead to make, should not take away from what your church depends on.
+</p>
+<h2>
+	Recurring Gift
+</h2>
+<div id="paypal-button-container"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=Ab0LEqYY-CUmoskS3e5DVDwQZX0xo4cTB7YeVHmmYF_0QAjLLXY6AXg296KVy0Dkf707trlk4aFBogab&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'blue',
+          layout: 'horizontal',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          'plan_id': 'P-1F442898JV270721JL6YD6XA'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID);
+      }
+  }).render('#paypal-button-container');
+</script>
