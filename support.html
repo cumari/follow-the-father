@@ -12,25 +12,11 @@ title: Support
 	If you wish to help with the cost of building and maintaining this site, you can donate using the links below, but don't feel like it is required. Please remember, your tithe is for your church any gift you feel lead to make, should not take away from what your church depends on.
 </p>
 <h3>
-	Recurring Gift
+	Make a Gift
 </h3>
-<div id="paypal-button-container"></div>
-<script src="https://www.paypal.com/sdk/js?client-id=Ab0LEqYY-CUmoskS3e5DVDwQZX0xo4cTB7YeVHmmYF_0QAjLLXY6AXg296KVy0Dkf707trlk4aFBogab&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-<script>
-  paypal.Buttons({
-      style: {
-          shape: 'pill',
-          color: 'blue',
-          layout: 'horizontal',
-          label: 'subscribe'
-      },
-      createSubscription: function(data, actions) {
-        return actions.subscription.create({
-          'plan_id': 'P-1F442898JV270721JL6YD6XA'
-        });
-      },
-      onApprove: function(data, actions) {
-        alert(data.subscriptionID);
-      }
-  }).render('#paypal-button-container');
-</script>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="Q6R8AXF97L8PL">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
