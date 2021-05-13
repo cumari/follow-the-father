@@ -1,6 +1,7 @@
-- name: The First Step
-  link: /2020/11/10/first_step
-- name: Archives
-  link: /archives
-- name: Subscribe
-  link: /subscribe
+#- name: The First Step
+#  link: /2020/11/10/first_step
+- name: Foundations
+  link: /foundations
+- name: Support
+  link: https://buymeacoffee.com/cumari   
+  target: _blank             

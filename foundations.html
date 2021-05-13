@@ -1,0 +1,15 @@
+---
+layout: default
+title: Foundations
+---
+  
+<ol>
+  {% assign post_list = site.posts | sort: "chapter" %}
+  {% for post in post_list %}
+    {% if post.book == 'Foundations' %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ol>
