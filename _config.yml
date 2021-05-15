@@ -16,7 +16,6 @@ author: Jeremy Green
 url: "followthefather.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 google_analytics: G-RBDQHK9V5X
-timezone: America/New_York
 twitter:
   username: 
   card: summary #keep this to generate a twitter share card
